@@ -1,0 +1,6 @@
+# pack-refs with: peeled
+b61eba5f98ff34866e794d62b14dcfc1657e462b refs/heads/bpmsAdmin-uf-user
+a65970df3a1473919034752fe7b76bf0edb41394 refs/heads/maggiehu-uf-user
+470581e3c695780d9762ea76f6fda77454ec929b refs/heads/mailman-uf-user
+59adede31d32a1df7ecd58e16ab146ca0c84e063 refs/heads/master
+40f9081e61c4431be5a23014b5bd0d84d7a7d9d2 refs/heads/social
