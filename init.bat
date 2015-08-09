@@ -3,8 +3,8 @@ setlocal
 
 set PROJECT_HOME=%~dp0
 set DEMO=Rewards Demo
-set AUTHORS=Andrew Block, Eric D. Schabell
-set PROJECT=git@github.com:jbossdemocentral/bpms-rewards-demo.git
+set AUTHORS=Phil Simpson, Kenneth Peeples, Maggie Hu
+set PROJECT=git@github.com:jbossdemocentral/bpms-mobile-integration-demo.git
 set PRODUCT=JBoss BPM Suite
 set JBOSS_HOME=%PROJECT_HOME%target\jboss-eap-6.4
 set SERVER_DIR=%JBOSS_HOME%\standalone\deployments
@@ -100,7 +100,7 @@ echo - setting up demo projects...
 echo.
 
 mkdir "%SERVER_BIN%\.niogit\"
-xcopy /Y /Q /S "%SUPPORT_DIR%\bpm-suite-demo-niogit\*" "%SERVER_BIN%\.niogit\"
+xcopy /Y /Q /S "%SUPPORT_DIR%\bpms-demo-niogit\*" "%SERVER_BIN%\.niogit\"
 mkdir "%SERVER_BIN%\.index\"
 
 REM Optional: uncomment to make use of the mock data.
@@ -124,22 +124,13 @@ echo ========================================================================
 echo =                                                                     =
 echo =  You can now start the %PRODUCT% with:                         =
 echo =                                                                      =
-echo =   %SERVER_BIN%\standalone.sh                           =
+echo =   %SERVER_BIN%\standalone.bat -b <host> -Dorg.uberfire.nio.git.daemon.host=<host> -Dorg.uberfire.nio.git.ssh.host=<host>  =
 echo =                                                                      =
 echo =  Login into business central at:                                     =
 echo =                                                                      =
-echo =    http:\\localhost:8080\business-central  u:erics &  p:bpmsuite1!   =
+echo =    http:\\<host>:8080\business-central  u:bpmsAdmin &  p:bpmsuite1!  =
 echo =                                                                      =
-echo =  If you want to see email notifications on user tasks, you will      =
-echo =  need to have a mail server running to accept SMTP requests on       =
-echo =  the default port 25. We include fakeSMTP java solution for you      =
-echo =  to capture email notifications, just start as admin:                =
-echo =                                                                      =
-echo =    $ java -jar support\fakeSMTP.jar                                  =
-echo =                                                                      =
-echo =  Be sure to start it by clicking on 'START SERVER' to avoid any      =
-echo =  connection errors when email notifications are triggered. Note      =
-echo =  that these errors will not stop the process from running.           =
+echo =  Be sure to replace <host> with your actual host name or IP.			=
 echo =                                                                      =
 echo =  %PRODUCT% %VERSION% %DEMO% Setup Complete.            =
 echo =                                                                      =
