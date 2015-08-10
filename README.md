@@ -1,20 +1,19 @@
 JBoss BPM Suite & Mobile Integration Demo
 ============================
-This is the BPMS - Mobile integration demo that provides exammples of human task integration, form designer
+This is the BPMS - Mobile integration demo that provides examples of human task integration, form designer
 and REST Service Task.
-
-There is options available to you for using this demo; .
 
 
 Option 1 - Install on your machine
 ----------------------------------
-1. [Download and unzip.](https://github.com/jbossdemocentral/bpms-rewards-demo/archive/master.zip)
+1. [Download and unzip.](https://github.com/jbossdemocentral/bpms-mobile-dv-integration-demo/archive/master.zip)
 
 2. Add products to installs directory.
 
 3. Run 'init.sh' or 'init.bat' file. 'init.bat' must be run with Administrative privileges.
 
 4. Start JBoss BPMS Server by running 'standalone.sh' or 'standalone.bat' in the <path-to-project>/target/jboss-eap-6.4/bin directory.
+   Use '-b YourHostOrIP -Dorg.uberfire.nio.git.daemon.host=YourHostOrIP -Dorg.uberfire.nio.git.ssh.host=YourHostOrIP' as the parameters in the startup.
 
 5. Login to http://YourHostOrIP:8080/business-central  (u:bpmsAdmin / p:bpmsuite1!).
 
