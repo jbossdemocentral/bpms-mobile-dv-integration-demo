@@ -13,7 +13,7 @@ Install on your machine
 	- If you would like the BPMS instance to be fully integrated with mobile over the Internet, your host or IP needs to be made accessible to Red Hat Mobile Application Platform, as well as connecting to Unified Push Server on OpenShift.
 	- Download the products (BPMSuite v6.1.0 and EAP v6.4.0) from [Red Hat Customer Portal](https://access.redhat.com) if you haven't already.
 
-1. [Download and unzip.](https://github.com/jbossdemocentral/bpms-mobile-dv-integration-demo/archive/master.zip)
+1. [Download and unzip.](https://github.com/jbossdemocentral/bpms-mobile-integration-demo/archive/master.zip)
 
 2. Add products (BPMSuite v6.1.0 and EAP v6.4.0) to {path-to-project}/installs directory.
 
