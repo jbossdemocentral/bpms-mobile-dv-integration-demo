@@ -38,7 +38,7 @@ To view the Push Notification on Android the settings from the UPS must be enter
 Supporting Articles
 -------------------
 - [Red Hat Mobile Application Platform - Connecting to JBoss BPMSuite REST (Special Edition for Red Hat Summit 2015!)](http://maggiechu-jboss.blogspot.com/2015/06/red-hat-mobile-app-connecting-to-bpms-rest.html)
-- [Using the Red Hat Mobile Unified Push Server](http://www.ossmentor.com/2015/07/using-red-hat-mobile-unified-push-server.html)
+- [Using the Red Hat Mobile Unified Push Server with BPMS](http://www.ossmentor.com/2015/10/using-unified-push-server-with-bpms.html)
 
 Released versions
 -----------------
