@@ -3,6 +3,8 @@ JBoss BPM Suite & Mobile Integration Demo
 This is the BPMS - Mobile integration demo that provides examples of human task integration, form designer
 and REST Service Task.
 
+The process is exposed via REST API for Red Hat Mobile Application Platform (MAP) to invoke, and then it invokes Unified Push Server's REST API.
+
 
 Install on your machine
 -----------------------
@@ -17,9 +19,9 @@ Install on your machine
 3. Run 'init.sh' or 'init.bat' file. 'init.bat' must be run with Administrative privileges.
 
 4. Start JBoss BPMS Server by running 'standalone.sh' or 'standalone.bat' in the {path-to-project}/target/jboss-eap-6.4/bin directory.
-   Use '-b YourHostOrIP -Dorg.uberfire.nio.git.daemon.host=YourHostOrIP -Dorg.uberfire.nio.git.ssh.host=YourHostOrIP' as the parameters in the startup.
+   Use '-b {YourHostOrIP} -Dorg.uberfire.nio.git.daemon.host={YourHostOrIP} -Dorg.uberfire.nio.git.ssh.host={YourHostOrIP}' as the parameters in the startup.
 
-5. Login to http://YourHostOrIP:8080/business-central  (u:bpmsAdmin / p:bpmsuite1!).
+5. Login to http://{YourHostOrIP}:8080/business-central  (u:bpmsAdmin / p:bpmsuite1!).
 
 6. BPMS-Mobile demo pre-installed as project.
 
