@@ -1,0 +1,8 @@
+{
+  "pushServerURL": "https://jbossunifiedpush-ossmentor.rhcloud.com/ag-push/",
+  "android": {
+    "senderID": "947307246353",
+    "variantID": "b110d268-30f0-48f9-b330-30a1e38d1ea5",
+    "variantSecret": "2ba89cdc-c8ac-43bc-96e5-a16c3718930d"
+  }
+}

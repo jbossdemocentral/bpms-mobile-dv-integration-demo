@@ -5,6 +5,7 @@ and REST Service Task.
 
 The process is exposed via REST API for Red Hat Mobile Application Platform (MAP) to invoke, and then it invokes Unified Push Server's REST API.
 
+![alt text](https://raw.githubusercontent.com/jbossdemocentral/dv-gettingstarted/master/docs/images/dvdemo-gettingstarted2.png "Teiid VDBs")  
 
 Install on your machine
 -----------------------
@@ -31,6 +32,8 @@ Notes
 -----
 This project is pre-loaded into the JBoss BPM Suite, after starting it you can login,
 examine the process, form designer, human task, and REST Service Task.
+
+To view the Push Notification on Android the settings from the UPS must be entered in the push-config.json file.  The Android Project under Projects should be imported in the Android Studio and run the Project to receive the notifications in the emulator.  See the supporting article for more specific detail on Push Notifications.
 
 Supporting Articles
 -------------------

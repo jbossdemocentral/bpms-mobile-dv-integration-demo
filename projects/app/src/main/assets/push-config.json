@@ -1,0 +1,8 @@
+{
+  "pushServerURL": "https://jbossunifiedpush-ossmentor.rhcloud.com/ag-push/",
+  "android": {
+    "senderID": "<from UPS>",
+    "variantID": "<from UPS>",
+    "variantSecret": "<from UPS>"
+  }
+}
