@@ -5,7 +5,7 @@ and REST Service Task.
 
 The process is exposed via REST API for Red Hat Mobile Application Platform (MAP) to invoke, and then it invokes Unified Push Server's REST API.
 
-![alt text](https://raw.githubusercontent.com/jbossdemocentral/dv-gettingstarted/master/docs/images/dvdemo-gettingstarted2.png "Teiid VDBs")  
+![alt text](https://raw.githubusercontent.com/jbossdemocentral/bpms-mobile-dv-integration-demo/master/docs/architecture1.PNG?token=AA-PN4UWbNoRAYcuThQIapgJV755A4CKks5WMG_LwA%3D%3D "Insurance Architecture")  
 
 Install on your machine
 -----------------------
