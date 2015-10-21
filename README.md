@@ -1,11 +1,13 @@
 JBoss BPM Suite & Mobile Integration Demo
-============================
+=========================================
 This is the BPMS - Mobile integration demo that provides examples of human task integration, form designer
 and REST Service Task.
 
 
-Option 1 - Install on your machine
-----------------------------------
+Install on your machine
+-----------------------
+* Prerequisites: If you would like the BPMS instance to be fully integrated with mobile over the Internet, your host or IP needs to be made accessible to Red Hat Mobile Application Platform, as well as connecting to Unified Push Server on OpenShift.
+
 1. [Download and unzip.](https://github.com/jbossdemocentral/bpms-mobile-dv-integration-demo/archive/master.zip)
 
 2. Add products to installs directory.
@@ -24,11 +26,12 @@ Option 1 - Install on your machine
 Notes
 -----
 This project is pre-loaded into the JBoss BPM Suite, after starting it you can login,
-examine the process, and data model from within the various product components.
+examine the process, form designer, human task, and REST Service Task.
 
 Supporting Articles
 -------------------
 - [Red Hat Mobile Application Platform - Connecting to JBoss BPMSuite REST (Special Edition for Red Hat Summit 2015!)](http://maggiechu-jboss.blogspot.com/2015/06/red-hat-mobile-app-connecting-to-bpms-rest.html)
+- [Using the Red Hat Mobile Unified Push Server](http://www.ossmentor.com/2015/07/using-red-hat-mobile-unified-push-server.html)
 
 Released versions
 -----------------
