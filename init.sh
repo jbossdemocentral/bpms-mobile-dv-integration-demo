@@ -1,5 +1,7 @@
-#!/bin/sh 
-DEMO="Red Hat Summit 2015 - Build an Enterprise Application in 60 Minutes with JBoss Middleware Demo"
+#!/bin/sh
+DEMO="Red Hat Summit 2015:"
+DEMO2="Build an Enterprise Application"
+DEMO3="in 60 Minutes with JBoss Middleware Demo"
 AUTHORS="Phil Simpson, Kenneth Peeples, Maggie Hu"
 PROJECT="git@github.com:jbossdemocentral/bpms-mobile-integration-demo.git"
 PRODUCT="JBoss BPM Suite"
@@ -15,37 +17,45 @@ EAP=jboss-eap-6.4.0-installer.jar
 VERSION=6.1
 
 # wipe screen.
-clear 
+clear
 
 echo
-echo "#################################################################"
-echo "##                                                             ##"   
-echo "##  Setting up the ${DEMO}                                ##"
-echo "##                                                             ##"   
-echo "##                                                             ##"   
-echo "##     ####  ####   #   #      ### #   # ##### ##### #####     ##"
-echo "##     #   # #   # # # # #    #    #   #   #     #   #         ##"
-echo "##     ####  ####  #  #  #     ##  #   #   #     #   ###       ##"
-echo "##     #   # #     #     #       # #   #   #     #   #         ##"
-echo "##     ####  #     #     #    ###  ##### #####   #   #####     ##"
-echo "##                                                             ##"   
-echo "##                                                             ##"   
-echo "##  brought to you by,                                         ##"   
-echo "##             ${AUTHORS}                  ##"
-echo "##                                                             ##"   
-echo "##  ${PROJECT}      ##"
-echo "##                                                             ##"   
-echo "#################################################################"
+echo "########################################################################"
+echo "##                                                                    ##"
+echo "##  Setting up the ${DEMO}                               ##"
+echo "##                                                                    ##"
+echo "##      ${DEMO2}                               ##"
+echo "##              ${DEMO3}              ##"
+echo "##                                                                    ##"
+echo "##      #   #   ###  ####  ##### #     #####                          ##"
+echo "##     # # # # #   # #   #   #   #     #        #                     ##"
+echo "##     #  #  # #   # ####    #   #     ###     ###                    ##"
+echo "##     #     # #   # #   #   #   #     #        #                     ##"
+echo "##     #     #  ###  ####  ##### ##### #####                          ##"
+echo "##                                                                    ##"
+echo "##     ####  ####   #   #      ### #   # ##### ##### #####            ##"
+echo "##     #   # #   # # # # #    #    #   #   #     #   #                ##"
+echo "##     ####  ####  #  #  #     ##  #   #   #     #   ###              ##"
+echo "##     #   # #     #     #       # #   #   #     #   #                ##"
+echo "##     ####  #     #     #    ###  ##### #####   #   #####            ##"
+echo "##                                                                    ##"
+echo "##                                                                    ##"
+echo "##  brought to you by,                                                ##"
+echo "##             ${AUTHORS}               ##"
+echo "##                                                                    ##"
+echo "##  ${PROJECT}  ##"
+echo "##                                                                    ##"
+echo "########################################################################"
 echo
 
 command -v mvn -q >/dev/null 2>&1 || { echo >&2 "Maven is required but not installed yet... aborting."; exit 1; }
 
-# make some checks first before proceeding.	
+# make some checks first before proceeding.
 if [ -r $SRC_DIR/$EAP ] || [ -L $SRC_DIR/$EAP ]; then
 	echo Product sources are present...
 	echo
 else
-	echo Need to download $EAP package from the Customer Portal 
+	echo Need to download $EAP package from the Customer Portal
 	echo and place it in the $SRC_DIR directory to proceed...
 	echo
 	exit
@@ -55,7 +65,7 @@ if [ -r $SRC_DIR/$BPMS ] || [ -L $SRC_DIR/$BPMS ]; then
 		echo Product sources are present...
 		echo
 else
-		echo Need to download $BPMS package from the Customer Portal 
+		echo Need to download $BPMS package from the Customer Portal
 		echo and place it in the $SRC_DIR directory to proceed...
 		echo
 		exit
@@ -79,6 +89,7 @@ if [ $? -ne 0 ]; then
 	exit
 fi
 
+echo
 echo "JBoss BPM Suite installer running now..."
 echo
 java -jar $SRC_DIR/$BPMS $SUPPORT_DIR/installation-bpms -variablefile $SUPPORT_DIR/installation-bpms.variables
@@ -88,6 +99,7 @@ if [ $? -ne 0 ]; then
 	exit
 fi
 
+echo
 echo "  - enabling demo accounts role setup in application-roles.properties file..."
 echo
 cp $SUPPORT_DIR/application-roles.properties $SERVER_CONF
@@ -107,17 +119,18 @@ chmod u+x $JBOSS_HOME/bin/standalone.sh
 echo
 echo "========================================================================"
 echo "=                                                                      ="
-echo "=  You can now start the $PRODUCT with:                         		 ="
-echo "=                                                                      ="										
-echo "=   nohup $SERVER_BIN/standalone.sh -b <host> -Dorg.uberfire.nio.git.daemon.host=<host> -Dorg.uberfire.nio.git.ssh.host=<host> & ="
+echo "=  You can now start the $PRODUCT with:                         ="
+echo "=                                                                      ="
+echo "=   $SERVER_BIN/standalone.sh -b <host>   \             ="
+echo "=      -Dorg.uberfire.nio.git.daemon.host=<host>         \             ="
+echo "=      -Dorg.uberfire.nio.git.ssh.host=<host>                          ="
 echo "=                                                                      ="
 echo "=  Login into business central at:                                     ="
 echo "=                                                                      ="
-echo "=  http://<host>:8080/business-central  (u:bpmsAdmin / p:bpmsuite1!)	 ="
-echo "=  																	 ="
-echo "=  Be sure to replace <host> with your actual host name or IP.		 ="
+echo "=  http://<host>:8080/business-central  (u:bpmsAdmin / p:bpmsuite1!)   ="
 echo "=                                                                      ="
-echo "=  $PRODUCT $VERSION $DEMO Setup Complete.            				 ="
+echo "=  Be sure to replace <host> with your actual host name or IP.         ="
+echo "=                                                                      ="
+echo "=  $PRODUCT $VERSION $DEMO Setup Complete.            ="
 echo "=                                                                      ="
 echo "========================================================================"
-
