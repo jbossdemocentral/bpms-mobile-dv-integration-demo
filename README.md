@@ -1,7 +1,6 @@
 JBoss BPM Suite & Mobile Integration Demo
 =========================================
-This is the BPMS - Mobile integration demo that provides examples of human task integration, form designer
-and REST Service Task.
+This is the BPMS - Mobile integration demo that provides examples of human task integration, form designer and REST Service Task.
 
 The process is exposed via REST API for Red Hat Mobile Application Platform (MAP) to invoke, and then it invokes Unified Push Server's REST API.
 
